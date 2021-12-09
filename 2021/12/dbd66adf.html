@@ -16,19 +16,20 @@
   <meta name="description" content="这里是lyj的博客！Hello! This is lyj&#39;s blog!">
   <meta name="author" content="lyj">
   <meta name="keywords" content="0">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="sqlmysql -uroot -p进入exit退出 相关概念 DB:  数据库，保存一组有组织的数据的容器   DBMS:  数据库管理系统，又称为数据库软件，用于管理DB中的数据   SQL:  结构化查询语言，用于和DBMS通信的语言    语言规范 不区分大小写，但建议关键字大写，表名、列名小写 每条命令最好用分号结尾 每条命令根据需要，可以缩进或换行，不影响命令执行 注释 单行注释：#注">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://sleep.0error.net/2021/12/4a17b156.html">
+<meta property="og:title" content="sql">
+<meta property="og:url" content="https://sleep.0error.net/2021/12/dbd66adf.html">
 <meta property="og:site_name" content="lyj&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="sqlmysql -uroot -p进入exit退出 相关概念 DB:  数据库，保存一组有组织的数据的容器   DBMS:  数据库管理系统，又称为数据库软件，用于管理DB中的数据   SQL:  结构化查询语言，用于和DBMS通信的语言    语言规范 不区分大小写，但建议关键字大写，表名、列名小写 每条命令最好用分号结尾 每条命令根据需要，可以缩进或换行，不影响命令执行 注释 单行注释：#注">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-12-05T07:47:14.449Z">
-<meta property="article:modified_time" content="2021-12-05T09:03:00.230Z">
+<meta property="article:published_time" content="2021-12-09T09:37:00.000Z">
+<meta property="article:modified_time" content="2021-12-09T09:44:08.414Z">
 <meta property="article:author" content="lyj">
+<meta property="article:tag" content="sql语法">
 <meta name="twitter:card" content="summary_large_image">
   
-  <title>Hello World - lyj&#39;s Blog</title>
+  <title>sql - lyj&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -174,7 +175,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hello World">
+            <span class="h2" id="subtitle" title="sql">
               
             </span>
 
@@ -184,8 +185,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-12-05 15:47" pubdate>
-        2021年12月5日 下午
+      <time datetime="2021-12-09 17:37" pubdate>
+        2021年12月9日 下午
       </time>
     </span>
   
@@ -195,7 +196,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      全文共有 367 字
+      全文共有 784 字
     </span>
   
 
@@ -204,7 +205,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      阅读全文预计需要 1 分钟
+      阅读全文预计需要 2 分钟
     </span>
   
 
@@ -233,34 +234,119 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">sql</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年12月5日 下午
+                  本文最后更新于：2021年12月9日 下午
                 
               </p>
             
             <div class="markdown-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></div></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">$ hexo server<br></code></pre></div></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">$ hexo generate<br></code></pre></div></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></div></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+              <h1 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h1><p><code>mysql -uroot -p</code>进入<br><code>exit</code>退出</p>
+<h2 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h2><ul>
+<li>DB:</li>
+<li><blockquote>
+<p>数据库，保存一组有组织的数据的容器</p>
+</blockquote>
+</li>
+<li>DBMS:</li>
+<li><blockquote>
+<p>数据库管理系统，又称为数据库软件，用于管理DB中的数据</p>
+</blockquote>
+</li>
+<li>SQL:</li>
+<li><blockquote>
+<p>结构化查询语言，用于和DBMS通信的语言</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="语言规范"><a href="#语言规范" class="headerlink" title="语言规范"></a>语言规范</h2><ul>
+<li>不区分大小写，但建议关键字大写，表名、列名小写</li>
+<li>每条命令最好用分号结尾</li>
+<li>每条命令根据需要，可以缩进或换行，不影响命令执行</li>
+<li>注释<blockquote>
+<p>单行注释：<code>#注释文字</code><br>单行注释：<code>--注释文字</code><br>多行注释：<code>/*注释文字*/</code></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
+<li><p>查看版本<br><code>select version();</code></p>
+</li>
+<li><p>打开数据库test<br><code>use test</code></p>
+<blockquote>
+<p>若显示<code>Database changed;</code> 表示打开成功</p>
+</blockquote>
+</li>
+<li><p>显示本库的表<br><code>show tables;</code></p>
+<blockquote>
+<p>显示<code>Empty set</code>表示库为空</p>
+</blockquote>
+</li>
+<li><p>打开指定库的表（换库）（库名mysql）<br><code>show tables from mysql</code></p>
+</li>
+<li><p>查看在哪个库内<br><code>select database();</code></p>
+</li>
+<li><p>建表a</p>
+  <figure class="highlight livecodeserver"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs livecodeserver"><span class="hljs-built_in">create</span> table <span class="hljs-keyword">a</span>( <span class="hljs-comment">#建表</span><br>  <span class="hljs-comment">#列名 类型</span><br><span class="hljs-comment">--&gt;id int,</span><br><span class="hljs-comment">--&gt;name varchar(20))</span><br></code></pre></div></td></tr></table></figure>
+<blockquote>
+<p>显示<code>Query OK</code>即成功</p>
+</blockquote>
+</li>
+<li><p>显示a表结构<br><code>desc a</code></p>
+</li>
+<li><p>显示数据<br><code>select * from a</code></p>
+</li>
+<li><p>添加数据<br><code>insert into a (id,name) values(1,&#39;john&#39;)</code></p>
+</li>
+<li><p>修改数据<br><code>update a set name=&#39;A&#39; where id=1;</code></p>
+</li>
+<li><p>删除数据<br><code>delete from a where id=1;</code><br><code>delete from a where name=&#39;john&#39;;</code></p>
+</li>
+<li><p>建库<br><code>create database a;</code></p>
+</li>
+<li><p>删库<br><code>drop database a;</code></p>
+</li>
+<li><p>删表<br><code>drop table a;</code></p>
+</li>
+<li><p>查询</p>
+<blockquote>
+<p>普通查找</p>
+<blockquote>
+<p>从某张表对某一列进行查找</p>
+<blockquote>
+<p><code>select 列名称 from 表名称;</code></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>从某张表对所有字段进行查找</p>
+<blockquote>
+<p><code>select * from 表名称;</code></p>
+</blockquote>
+</blockquote>
+<p>条件限制查找</p>
+<blockquote>
+<p><code>select * from 表名 where=限制条件;</code></p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>更新</p>
+<p><code>update 表名称 set 列名称=新值 where 列名称=某值;</code></p>
+</li>
+</ul>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/sql%E8%AF%AD%E6%B3%95/">sql语法</a>
+                    
+                  </div>
                 
               </div>
               
@@ -275,15 +361,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/12/dbd66adf.html">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">sql</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2021/12/4a17b156.html">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
